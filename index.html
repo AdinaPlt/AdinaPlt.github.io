@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adina's CV</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="header-wrapper">
+        <div id="my-picture">
+          <img src="images/img_adina.jpeg" width="100" alt="Adina" />
+        </div>
+        <div id="header-info">
+          <h1>Adina Plăcintar</h1>
+          <h2 id="job-title">Cursant@FasTrackIT</h2>
+        </div>
+      </div>
+
+      <ul id="top-menu-bar">
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Languages</a></li>
+      </ul>
+    </header>
+
+    <section id="content">
+      <div id="side-menu">
+        <section>
+          <form action="secretara.html">
+            <h2>Contact</h2>
+            <div>
+              <label for="userEmail">Email</label>
+              <input
+                type="text"
+                name="email"
+                id="userEmail"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="userName">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                id="userName"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <button type="submit">Send</button>
+          </form>
+        </section>
+
+        <section>
+          start server: CTRL + Shift +P -> Browser Sync mode -> Enter
+        </section>
+      </div>
+      <div id="main">
+        <h2>Skills:</h2>
+        <ul>
+          <li class="favorite">HTML</li>
+          <li>CSS</li>
+          <li class="favorite">JS</li>
+        </ul>
+
+        <h2>Known languages</h2>
+
+        <table border="1">
+          <tr>
+            <th>Language</th>
+            <th>Level</th>
+          </tr>
+          <tr>
+            <td class="favorite">Romanian</td>
+            <td>Native</td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>Professional</td>
+          </tr>
+        </table>
+
+        <p></p>
+      </div>
+    </section>
+    <footer>
+      Open my
+      <a href="https://www.linkedin.com/in/adina-placintar/" target="_blank"
+        >LinkedIn account</a
+      >
+    </footer>
+    <script>
+      console.info(2 + 3);
+      console.warn("Adina Placintar");
+
+      var employed = true;
+      var age = 18;
+      console.log("Angajat:", employed);
+      employed = false;
+      console.log("Angajat:", employed);
+      employed = "da";
+      console.log("Angajat:", employed);
+
+      var skills = ["html", "css"];
+
+      console.debug("tipul variabilei skills:", typeof skills);
+
+      var job = document.getElementById("job-title");
+      console.warn("job", job);
+      console.info(typeof job);
+    </script>
+  </body>
+</html>
+
+<!-- start server: CTRL + Shift +P -> Browser Sync mode -> Enter ->"/"-> Enter -->
