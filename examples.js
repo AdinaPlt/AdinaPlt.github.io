@@ -19,4 +19,4 @@ function variablesExamples() {
   console.info(typeof job);
 }
 
-//variablesExamples();
+variablesExamples();
