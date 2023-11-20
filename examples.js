@@ -19,7 +19,7 @@ function updateTitle(title) {
   var job = document.getElementById("job-title");
   console.warn("job", job, title);
   console.info(typeof job);
-  job.innerHTML = "Web Developer";
+  job.innerHTML = "Web Developer Trainee";
 }
 
 //variablesExamples();
