@@ -19,8 +19,8 @@ function updateTitle(title) {
   var job = document.getElementById("job-title");
   console.warn("job", job, title);
   console.info(typeof job);
-  job.innerHTML = "Web Developer";
+  job.innerHTML = title;
 }
 
-//variablesExamples();
-//updateTitle("Web Developer");
+variablesExamples();
+updateTitle("Web Developer");
