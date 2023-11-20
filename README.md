@@ -2,4 +2,4 @@
 
 My personal CV
 
-[adinaplt.github.io]https://adinaplt.github.io/
+[adinaplt.github.io] https://adinaplt.github.io/
