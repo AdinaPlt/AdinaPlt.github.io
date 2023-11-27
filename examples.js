@@ -23,4 +23,4 @@ function updateTitle(title) {
 }
 
 variablesExamples();
-updateTitle("Developer");
+updateTitle("Web Developer");
