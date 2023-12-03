@@ -9,15 +9,23 @@
 
   <body>
     <header>
-      <h1>Adina Plăcintar</h1>
-      <img height="100" src="images/img_adina.jpeg" alt="selfie" />
-      <p id="job-title">Cursant@FasTrackIT</p>
+      <div id="header-wrapper">
+        <div id="my-picture">
+          <img src="images/img_adina.jpeg" width="100" alt="Adina" />
+        </div>
+        <div id="header-info">
+          <h1>Adina Plăcintar</h1>
+          <p id="job-title">Cursant@FastTrackIT</p>
+        </div>
+      </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#" class="active">HOME</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Languages</a></li>
+        <li><a href="#" onclick="showHome()">HOME</a></li>
+        <li><a href="#" onclick="showSkills()">Skills</a></li>
+        <li>
+          <a href="#" onclick="showProjects()" class="active">Projects</a>
+        </li>
+        <li><a href="#" onclick="showLanguages()">Languages</a></li>
       </ul>
     </header>
 
@@ -57,59 +65,52 @@
         </section>
       </div>
       <div id="main">
-        <h2>Skills:</h2>
-        <ul>
-          <li class="favorite">HTML</li>
-          <li>CSS</li>
-          <li class="favorite">JS</li>
-        </ul>
+        <h2>Home</h2>
+        <p>Welcome...</p>
 
-        <h2>Known languages</h2>
+        <div style="display: none" id="skills">
+          <h2>Skills:</h2>
+          <ul>
+            <li class="favorite">HTML</li>
+            <li>CSS</li>
+            <li class="favorite">JS</li>
+          </ul>
+        </div>
 
-        <table border="1">
-          <tr>
-            <th>Language</th>
-            <th>Level</th>
-          </tr>
-          <tr>
-            <td class="favorite">Romanian</td>
-            <td>Native</td>
-          </tr>
-          <tr>
-            <td>English</td>
-            <td>Professional</td>
-          </tr>
-        </table>
+        <h2>Projects</h2>
+        <p>These are my projects...</p>
+
+        <div style="display: none" id="languages">
+          <h2>Known languages</h2>
+
+          <table border="1">
+            <tr>
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td class="favorite">Romanian</td>
+              <td>Native</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Professional</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </section>
 
     <footer>
-      Open my
-      <a href="https://www.linkedin.com/in/adina-placintar/" target="_blank"
-        >LinkedIn account
-      </a>
+      <a
+        class="item"
+        href="https://www.linkedin.com/in/adina-placintar/"
+        target="_blank"
+      >
+        <img src="images/LinkedIn_icon.png" width="20px" />LinkedIn</a
+      >
     </footer>
-
-    <script>
-      console.info(2 + 3);
-      console.warn("Adina Placintar");
-
-      var employed = true;
-      var age = 18;
-      console.log("Angajat:", employed);
-      employed = false;
-      console.log("Angajat:", employed);
-      employed = "da";
-      console.log("Angajat:", employed);
-
-      var skills = ["html", "css"];
-
-      console.debug("tipul variabilei skills:", typeof skills);
-
-      var job = document.getElementById("job-title");
-      console.warn("job", job);
-      console.info(typeof job);
-    </script>
+    <script src="index copy.js"></script>
   </body>
 </html>
 
