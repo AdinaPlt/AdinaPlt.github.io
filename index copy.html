@@ -9,7 +9,7 @@
 
   <body>
     <header>
-      <div id="header-wrapper">
+      <div style="display: flex">
         <div id="my-picture">
           <img src="images/img_adina.jpeg" width="100" alt="Adina" />
         </div>
@@ -20,12 +20,13 @@
       </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#" onclick="showHome()">HOME</a></li>
-        <li><a href="#" onclick="showSkills()">Skills</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">Skills</a></li>
         <li>
-          <a href="#" onclick="showProjects()" class="active">Projects</a>
+          <a href="#" class="active">Projects</a>
         </li>
         <li><a href="#" onclick="showLanguages()">Languages</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </header>
 
@@ -65,10 +66,12 @@
         </section>
       </div>
       <div id="main">
-        <h2>Home</h2>
-        <p>Welcome...</p>
+        <div style="display: none">
+          <h2>Home</h2>
+          <p>Welcome...</p>
+        </div>
 
-        <div style="display: none" id="skills">
+        <div style="display: none">
           <h2>Skills:</h2>
           <ul>
             <li class="favorite">HTML</li>
@@ -77,12 +80,13 @@
           </ul>
         </div>
 
-        <h2>Projects</h2>
-        <p>These are my projects...</p>
+        <div>
+          <h2>Projects</h2>
+          <p>These are my projects...</p>
+        </div>
 
         <div style="display: none" id="languages">
           <h2>Known languages</h2>
-
           <table border="1">
             <tr>
               <th>Language</th>
