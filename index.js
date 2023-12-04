@@ -12,38 +12,8 @@ function show(id) {
   page.style.display = "block";
 }
 
-function showHome() {
+function showPage(id) {
   hide(activePage);
-  show("home");
-  activePage = "home";
-
-  var page = document.getElementById("home");
-  page.style.display = "block";
-}
-
-function showSkills() {
-  hide(activePage);
-  show("skills");
-  activePage = "skills";
-
-  var page = document.getElementById("skills");
-  page.style.display = "block";
-}
-
-function showProjects() {
-  hide(activePage);
-  show("projects");
-  activePage = "projects";
-
-  var page = document.getElementById("projects");
-  page.style.display = "block";
-}
-
-function showLanguages() {
-  hide(activePage);
-  show("languages");
-  activePage = "languages";
-
-  var page = document.getElementById("languages");
-  page.style.display = "block";
+  show(id);
+  activePage = id;
 }
