@@ -38,12 +38,3 @@ function showLanguages() {
   var page = document.getElementById("languages");
   page.style.display = "block";
 }
-
-function showContact() {
-  hide("home");
-  hide("skills");
-  hide("project");
-
-  var page = document.getElementById("contact");
-  page.style.display = "block";
-}
