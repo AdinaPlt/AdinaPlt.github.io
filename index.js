@@ -22,9 +22,9 @@ function showSkills() {
 }
 
 function showProjects() {
-  hide("home").style.display = "none";
-  hide("skills").style.display = "none";
-  hide("languages").style.display = "none";
+  hide("home");
+  hide("skills");
+  hide("languages");
 
   var page = document.getElementById("projects");
   page.style.display = "block";
