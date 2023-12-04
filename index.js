@@ -1,13 +1,13 @@
+function hide(id) {
+  console.info("hide", id);
+  document.getElementById(id).style.display = "none";
+}
+
 function show(id) {
   console.info("show", id);
   var page = document.getElementById(id);
   page.style.display = "block";
-  console.info("page", page);
-}
-
-function hide(id) {
-  console.info("hide", id);
-  document.getElementById(id).style.display = "none";
+  console.info("show page", page);
 }
 
 function showHome() {
@@ -26,6 +26,8 @@ function showSkills() {
   hide("projects");
   hide("languages");
 
+  show("skills");
+
   var page = document.getElementById("skills");
   page.style.display = "block";
 }
@@ -35,6 +37,8 @@ function showProjects() {
   hide("skills");
   hide("languages");
 
+  show("projects");
+
   var page = document.getElementById("projects");
   page.style.display = "block";
 }
@@ -43,6 +47,8 @@ function showLanguages() {
   hide("home");
   hide("skills");
   hide("projects");
+
+  show("languages");
 
   var page = document.getElementById("languages");
   page.style.display = "block";
