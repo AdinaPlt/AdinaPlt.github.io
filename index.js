@@ -1,3 +1,10 @@
+function show(id) {
+  console.info("show", id);
+  var page = document.getElementById(id);
+  page.style.display = "block";
+  console.info("page", page);
+}
+
 function hide(id) {
   console.info("hide", id);
   document.getElementById(id).style.display = "none";
@@ -7,6 +14,8 @@ function showHome() {
   hide("skills");
   hide("projects");
   hide("languages");
+
+  show("home");
 
   var page = document.getElementById("home");
   page.style.display = "block";
