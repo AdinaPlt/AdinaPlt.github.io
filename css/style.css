@@ -82,6 +82,14 @@ button {
   font-weight: 400;
 }
 
+.primary-action {
+  text-align: right;
+  background-color: rgba(137, 43, 226, 0.792);
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px 11px;
+}
+
 .primary-action:hover {
   background-color: blueviolet;
 }
@@ -90,14 +98,6 @@ button {
   background-color: rgb(128, 128, 128);
   color: #fff;
   border: 1px solid rgb(128, 128, 128);
-}
-
-.primary-action {
-  text-align: right;
-  background-color: rgba(137, 43, 226, 0.792);
-  color: #fff;
-  border-radius: 3px;
-  padding: 5px 10px;
 }
 
 .actions {
@@ -207,6 +207,9 @@ footer .item {
   flex-direction: row;
   align-items: center;
   position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: var(--max-width);
 }
 #job-title {
   color: black;
@@ -218,7 +221,6 @@ footer .item {
 #header-info {
   flex: 1;
   padding: 10px;
-  display: block;
 }
 
 #top-menu-bar {
