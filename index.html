@@ -32,36 +32,58 @@
     <section id="content">
       <div id="side-menu">
         <section>
-            <h2>Contact Form</h2>
-            <form action="secretara.html">
+          <h2>Contact Form</h2>
+          <form action id="contact-from">
             <div class="form-row">
-              <label for="userEmail">Email</label>
-              <input
-                type="text"
-                name="email"
-                id="userEmail"
-                placeholder="email@domain.com"
-                required
-              />
+              <label for="e">Email</label>
+              <div>
+                <input
+                  type="email"
+                  id="e"
+                  name="em"
+                  id="userEmail"
+                  placeholder="email@domain.com"
+                />
+              </div>
             </div>
 
             <div class="form-row">
               <label for="userName">Name</label>
+              <div>
+                <input
+                  type="text"
+                  id="userName"
+                  name="name"
+                  placeholder="Your full name"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="Subject">Your message</label>
               <input
                 type="text"
-                name="name"
-                id="userName"
-                placeholder="Your full name"
-                required
+                id="Subject"
+                name="userSubject"
+                placeholder="Subject"
               />
-            </div class="actions">
+            </div>
 
-            <button type="submit">Contact us</button>
+            <div class="form-row">
+              <textarea
+                id="Message"
+                name="userMessage"
+                rows="5"
+                placeholder="Message"
+              >
+              </textarea>
+            </div>
+
+            <div class="actions">
+              <button type="cancel" class="secondary-action">Cancel</button>
+              <button type="submit" class="primary-action">Send</button>
+            </div>
           </form>
-        </section>
-
-        <section>
-          <!-- start server: CTRL + Shift +P -> Browser Sync mode -> Enter -->
         </section>
       </div>
 
@@ -82,7 +104,10 @@
 
         <div id="projects" class="page" style="display: block">
           <h2>Projects</h2>
-          <p>These are my projects...</p>
+          <p>These are my projects:</p>
+          <ul>
+            <li>Project 1</li>
+          </ul>
         </div>
 
         <div class="page" id="languages">
