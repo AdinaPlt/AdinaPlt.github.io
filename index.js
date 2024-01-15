@@ -39,9 +39,29 @@ function initEvents() {
 
 function showSkills() {
   var ul = document.querySelector("#skills ul");
-  ul.innerHTML = "<li>HTML</li>";
-  ul.innerHTML = ul.innerHTML + "<li>CSS</li>";
-  ul.innerHTML += "<li>JS</li>";
+
+  var skills = [
+    {
+      name: "HTML",
+      endorcements: 6,
+    },
+    {
+      name: "CSS",
+      endorcements: 5,
+    },
+    {
+      name: "JS",
+      endorcements: 4,
+    },
+  ];
+
+  var text = skills.map(function (skill) {
+    console.info("inside %o map ", skill);
+    return `<li>${skill.name}<span>-${skill.endorcements}</span></li>`;
+  });
+  console.warn(skills, text);
+
+  ul.innerHTML = text.join("");
 }
 
 //executii
