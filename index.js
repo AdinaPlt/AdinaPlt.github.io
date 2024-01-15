@@ -51,16 +51,26 @@ function showSkills() {
     },
     {
       name: "JS",
-      endorcements: 4,
+      endorcements: 7,
+      favorite: true,
+    },
+    {
+      name: "Word",
+      endorcements: 1,
+      favorite: false,
     },
   ];
 
   var text = skills.map(function (skill) {
-    console.info("inside %o map ", skill);
-    return `<li>${skill.name}<span>-${skill.endorcements}</span></li>`;
+    var cls = "";
+    if (skill.favorite == true) {
+      cls = "favorite";
+    }
+
+    console.info("inside %o map ", skill.name, cls);
+    return `<li class="${cls}">${skill.name}<span>-${skill.endorcements}</span></li>`;
   });
   console.warn(skills, text);
-
   ul.innerHTML = text.join("");
 }
 
