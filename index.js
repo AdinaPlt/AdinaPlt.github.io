@@ -61,11 +61,21 @@ function showSkills(skills) {
     console.info("inside %o map ", skill.name, cls);
     return `<li class="${cls}">${skill.name}<span>-${skill.endorcements}</span></li>`;
   });
-  console.warn(skills, text);
+  console.warn(text);
   ul.innerHTML = text.join("");
 }
 
+function loadSkills() {
+  var promise = fetch("skills.json");
+  promise.then(function (r) {
+    const jsonPromise = r.json();
+    jsonPromise.then(function (skills) {
+      showSkills(skills);
+    });
+  });
+}
+
 //executii
-//showSkills([]);
 showPage(activePage);
 initEvents();
+loadSkills();
