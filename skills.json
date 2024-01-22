@@ -10,12 +10,17 @@
   },
   {
     "name": "JS",
-    "endorcements": 7,
+    "endorcements": 8,
     "favorite": true
   },
   {
     "name": "Word",
-    "endorcements": 1,
+    "endorcements": 10,
     "favorite": false
+  },
+  {
+    "name": "Adobe Photoshop",
+    "endorcements": 10,
+    "favorite": true
   }
 ]

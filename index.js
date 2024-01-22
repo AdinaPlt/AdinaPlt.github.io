@@ -48,8 +48,18 @@ function initEvents() {
   });
 }
 
+function sortSkillsByEndorcements(a, b) {
+  console.info("sort", a, b);
+  return b.endorcements - a.endorcements;
+}
+
+function sortByName(a, b) {
+  return a.name.localeCompare(b.name);
+}
+
 function showSkills(skills) {
-  console.info("skills: ", skills);
+  //skills.sort(sortSkillsByEndorcements);
+  skills.sort(sortByName);
   var ul = $("#skills ul");
 
   var text = skills.map(function (skill) {
@@ -62,6 +72,7 @@ function showSkills(skills) {
     return `<li class="${cls}">${skill.name}<span>-${skill.endorcements}</span></li>`;
   });
   console.warn(text);
+
   ul.innerHTML = text.join("");
 }
 
