@@ -178,4 +178,156 @@ return result;
   console.info(s);
   console.info(c === s);
 
+  [1, 2, 3].map(function(n){return n*2})
+[1, 2, 3].map(function(n, i){return n*2;})
+[1, 2, 3].map((n)=> {return n*2})
+[1, 2, 3].map(n=>  n*2)
+
+
+[1, 2, 3].map(n, i => n*2)
+[1, 2, 3].map(n=>  (n*2))
+[1, 2, 3].map(n=>  n*2;)
+
+class Figura {
+  construction(options){
+    this.nume = options.nume;
+    this.laturi=options.laturi;
+  }
+  info(){
+    return this.nume + "-" + this.laturi;
+  }
+  }
+  var p=new Figura({
+    nume:"Patrat",
+    laturi:4
+  });
+console.info(p.info());
+console.info(p.info()==p.nume + "-" + p.laturi);
+console.info(this.nume + "-" + this.laturi);
+
+class Person {
+  constructor(name) {
+    this.firstName = name;
+  }
+  sayHello() {
+    console.log("Hello: " + this.firstName);
+  }
+}
+var Tibi = new Person("Tibi");
+var person = {
+  firstName:"Ionica"
+};
+Tibi.sayHello.call(person);
+
+
+class Ar {
+  add(i, j) {
+    return i+j;
+  }
+}
+class AQuestion extends Ar {
+  constructor(){
+    super();
+    var s=9;
+    console.info(this.add(s, 6));
+  }
+}
+new AQuestion();
+
+for (var i=0; i<5; i++){
+  setTimeout(function (){
+    console.info(i);
+  }100);
+}
+
+
+function calc(n) {
+  if (n<1) return 0;
+  return n + calc(n-1);
+  }
+console.info(calc(5));
+
+function fixPoints(points){
+points[1]={
+  x:2,
+  y:4
+};
+}
+const points= [{
+  x:1,
+  y:1
+}, {
+  x:2,
+  y:2
+}, {
+  x:3,
+  y:3
+}];
+fixPoints(points);
+console.log(points[1].y);
+
+function mirrorPoints(points){
+  points = points.map(p => ({
+    x:p.y, y:p.x
+  }));
+  points[1]={
+    x:2,
+    y:1
+  };
+  return points;
+}
+   let points= [{
+    x:1,
+    y:2
+  }, {
+    x:3,
+    y:4
+  }, {
+    x:5,
+    y:6
+  }];
+  mirrorPoints(points);
+  console.log(points[1].y);
+
+  function mirrorPoints(points){
+    const tmp = point.y;
+      point.y = point.x;
+      point.x=tmp;
+      return point;
+  }
+     let points= [{
+      x:1,
+      y:2
+    }, {
+      x:3,
+      y:4
+    }, {
+      x:5,
+      y:6
+    }];
+    mirrorPoints(points[1]);
+    console.log(points[1].y);
   
+
+    function mirrorPoint(x,y){
+      const tmp = y;
+      y = x;
+        x=tmp;
+        return {
+          x: x,
+          y
+    };
+  }
+       let points= [{
+        x:1,
+        y:2
+      }, {
+        x:3,
+        y:4
+      }, {
+        x:5,
+        y:6
+      }];
+      mirrorPoint(points[1].x, points[1].y);
+      console.log(points[1].y);
+    

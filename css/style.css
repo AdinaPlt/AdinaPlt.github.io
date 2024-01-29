@@ -275,4 +275,8 @@ td.favorite {
   color: grey;
 }
 
+#podcast {
+  font-size: 16px;
+  line-height: 20px;
+}
 /*index end*/
